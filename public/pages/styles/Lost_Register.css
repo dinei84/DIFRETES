@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    overflow-y: hidden;
+}
+
+:root {
+    --primary-color: #721738;
+    --secondary-color: #333;
+    --tertiary-color: #560e24;
+    --quaternary-color: #fff;
+  }
+  
+
 .container_form {
 
     width: 700px;
@@ -7,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
+    background: white;
     box-shadow: 1px 0px 1.2px 0px #e3e3e3;
     border-radius: 3px;
     padding: 1em;
@@ -32,7 +47,7 @@
     padding: 5px 30px;
     border: none;
     outline: none;
-    background-color: #6fcffb;
+    background-color: var(--primary-color);
     color: #fff;
     text-shadow: 0 0 5px rgb(0, 0, 0);
     font-family: inherit;
@@ -46,7 +61,7 @@
 
 .submit_btn:hover {
 
-    background-color: #444444;
+    background-color: var(--secondary-color);
     transform: scale(1.03);
 
 }
@@ -55,7 +70,8 @@
 .form_text {
     text-align: center;
     font-size: 1.5em;
-    color: #00dae0;
+    font-weight: bolder;
+    color: var(--primary-color);
 }
 
 .form_grupo {
@@ -70,9 +86,6 @@
     overflow: hidden;
 }
 
-body {
-    overflow-y: hidden;
-}
 
 .form_input {
 
@@ -87,27 +100,5 @@ body {
     transition: all 0.3s;
 
 }
-.back_btn {
-    display: block;
-    padding: 5px 30px;
-    border: none;
-    outline: none;
-    background-color: #6fcffb;
-    color: #fff;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
-    font-family: inherit;
-    font-size: 25px;
-    font-family: 'open_sansregular';
-    border-radius: 6px;
-    margin: 20px 10px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.back_btn:hover {
-    background-color: #444444;
-    transform: scale(1.03);
-}
-
 
 
