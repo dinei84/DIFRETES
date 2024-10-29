@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('a.spreadsheet, a.freight_query, a.chat, a.calculators');
+    const links = document.querySelectorAll('a.spreadsheet, a.freight_query, a.contacts , a.chat, a.chargerorder, a.calculators');
 
     links.forEach(link => {
         const frontSide = document.createElement('div');
@@ -29,6 +29,8 @@ function getImageSource(className) {
         'spreadsheet': '../assets/planilha.png',
         'freight_query': '../assets/lupa.png',
         'chat': '../assets/social_10661781.png',
+        'contacts' : '../assets/contatos.png',
+        'chargerorder' : '../assets/registro-online.png',
         'calculators': '../assets/calculadora.png'
     };
 
