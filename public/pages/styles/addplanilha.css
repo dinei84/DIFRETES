@@ -3,12 +3,13 @@
     --secondary-color: #333;
     --tertiary-color: #560e24;
     --quaternary-color: #fff;
+    --quintenary-color: #ca5b84;
 }
 
 
 body.add-planilha-body {
     background: var(--primary-color);
-    min-height: 100vh;
+    min-height: 100vh;  
     display: flex;
     justify-content: center;
     align-items: center;

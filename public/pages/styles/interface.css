@@ -3,8 +3,8 @@
     --secondary-color: #333;
     --tertiary-color: #560e24;
     --quaternary-color: #fff;
+    --quintenary-color: #66253d;
 }
-
 .container {
     display: flex;
     flex-wrap: wrap;
