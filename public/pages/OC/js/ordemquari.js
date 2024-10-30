@@ -1,5 +1,5 @@
 // Verifica se está na página de resultado
-if (window.location.pathname.endsWith('ordempgua.html')) {
+if (window.location.pathname.endsWith('ordemaraquari.html')) {
     // Recupera os dados do localStorage
     const formData = JSON.parse(localStorage.getItem('formData'));
 
@@ -27,3 +27,4 @@ if (window.location.pathname.endsWith('ordempgua.html')) {
 document.getElementById('imprimir').addEventListener('click', function() {
     window.print();
 });
+
