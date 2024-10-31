@@ -1,11 +1,7 @@
 @charset "utf-8";
 
 
-body{
-    background-image: url(acets/g10.jpeg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center right;     
+body{    
     font-family: "Noto Sans Mono", monospace;    
     font-optical-sizing: auto;
     font-weight: weight;

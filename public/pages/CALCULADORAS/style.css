@@ -1,3 +1,14 @@
+:root {
+  --primary-color: #721738;
+  --secondary-color: #333;
+  --tertiary-color: #560e24;
+  --quaternary-color: #fff;
+  --quintenary-color: #66253d;
+}
+
+
+
+
 /* Encapsulamento com classe principal */
 .calculadoras-page {
   /* Estilo da página de calculadoras */
@@ -50,7 +61,7 @@
   cursor: pointer;
   margin: auto;
   text-transform: uppercase;
-  background-color: rgb(14, 14, 26);
+  background-color: var(--primary-color);
   color: rgb(234, 234, 234);
   font-weight: 700;
   transition: 0.6s;
@@ -66,8 +77,8 @@
 
 .calculadoras-page .btn:hover, 
 .calculadoras-page .btn2:hover {
-  background: rgb(2,29,78);
-  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  background: var(--quintenary-color);
+  background: linear-gradient(270deg, var(--tertiary-color) 0%, var(--quintenary-color) 60%);
   color: rgb(4, 4, 38);
 }
 
