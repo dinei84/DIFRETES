@@ -71,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const taxaICMS = obterTaxaICMS(estadoOrigemValor, estadoDestinoValor);
 
+        taxaICMSField.value = taxaICMS;
+
         const freteParaPJ = calcularFreteParaPJ(valorFrete, margemValor, taxaICMS);
         const freteParaPF = calcularFreteParaPF(valorFrete, margemValor, taxaICMS);
 
@@ -81,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     limpar.addEventListener('click', function() {
         valordoFrete.value = '';
         margem.value = '10';
+        taxaICMSField.value= '';
         freteParaPJField.value = '';
         freteParaPFField.value = '';
     });

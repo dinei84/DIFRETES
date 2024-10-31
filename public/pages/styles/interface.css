@@ -4,99 +4,52 @@
     --tertiary-color: #560e24;
     --quaternary-color: #fff;
     --quintenary-color: #66253d;
-}
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 25px;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a.spreadsheet,
-a.freight_query,
-a.chat,
-a.chargerorder,
-a.contacts,
-a.calculators {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: var(--primary-color);
-    perspective: 1000px;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 8px 12px rgba(34, 34, 34, 0.562);
-}
-
-.front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden;
-    border-radius: 50%;
+  }
+  
+  /* Estilos básicos */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+  }
+  
+  /* Cabeçalho */
+  .hello {
     text-align: center;
-}
-
-.back {
-    transform: rotateY(180deg);
-    background-size: 60% 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-a.spreadsheet {
-    background-color: var(--primary-color);
-}
-
-a.freight_query {
-    background-color: var(--secondary-color);
-}
-
-a.chat {
-    background-color: var(--tertiary-color);
-}
-
-a.calculators {
-    background-color: var(--quaternary-color);
-}
-
-a.chargerorder {
-    background-color: var(--secondary-color);
-}
-
-a.contacts {
-    padding-left: 15px;
-    background-color: var(--secondary-color);
-}
-
-@media (max-width: 800px) {
-    body {
-        font-size: 10px;
-        flex-direction: column;
+    color: var(--quaternary-color);
+    padding: 20px;
+  }
+  
+  .hello h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  /* Estilos para a imagem da equipe */
+  .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .team img {
+    max-width: 100%;
+    width: 50%;
+    margin: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .hello h1 {
+      font-size: 2em;
     }
-    a.spreadsheet,
-    a.freight_query,
-    a.chat,
-    a.chargerorder,
-    a.contacts,
-    a.calculators {
-        width: 150px;
-        height: 150px;
-}
-}
+  
+    .team img {
+      width: 90%; /* Garante que a imagem ocupe 90% da largura em telas pequenas */
+    }
+  }
+  

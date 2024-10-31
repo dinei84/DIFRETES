@@ -74,6 +74,13 @@ button{
     /* background-color: aquamarine; */
 }
 
+#taxaICMSField {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+}
+
 input{
     width: 65px;
     height: 25px;
@@ -114,6 +121,14 @@ input{
 }
 .box_datalist #freteParaPF{
     margin-left: 22px;
+}
+
+.buttonback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .bot3{
