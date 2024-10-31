@@ -13,13 +13,14 @@ body{
   .button{
     position:relative;
     display:inline-block;
-    margin:20px;
   }
   
   .button a{
     color:white;
     font-family:Helvetica, sans-serif;
     font-weight:bold;
+    transform: scale(0.65);
+    transform-origin: center;
     font-size:36px;
     text-align: center;
     text-decoration:none;

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../styles/homebotton.css" />
+    <link
+      rel="shortcut icon"
+      href="accets/icons8-calculator-64.png"
+      type="image/x-icon"
+    />
+    <title>Calculadora de ICMS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de ICMS</h1>
+      <p>Preencha todos os campos com os dados do carregamento</p>
+    </header>
+
+    <div ontouchstart="">
+      <div class="button">
+        <a href="../../interface.html">Home</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="box_datalist">
+        <label for="valordoFrete">Valor do Frete: R$</label>
+        <input id="valordoFrete" type="text" />
+      </div>
+      <div class="box_datalist">
+        <label for="margem">Margem: </label>
+        <input id="margem" type="text" value="10" />
+      </div>
+      <div class="box_datalist">
+        <label for="estadoSaida">Estado de Saída: </label>
+        <select name="estadoSaida" id="estadoSaida">
+          <option value="SC">Santa Catarina</option>
+          <option value="PR">Paraná</option>
+          <option value="MT">Mato Grosso</option>
+        </select>
+      </div>
+      <div class="box_datalist">
+        <label for="estadoDestino">Estado Destino: </label>
+        <select id="estadoDestino" name="estado">
+          <optgroup id="maisComuns" label="Mais Comuns">
+            <option value="MT" selected>Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="SP">São Paulo</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="GO">Goiás</option>
+            <option value="SC">Santa Catarina</option>
+          </optgroup>
+          <optgroup id="menosComuns" label="Menos Comuns">
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="CE">Ceará</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="AM">Amazonas</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="BA">Bahia</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="MA">Maranhão</option>
+            <option value="AP">Amapá</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="botoes">
+        <div>
+          <button id="calcular">Calcular</button>
+        </div>
+        <div>
+          <button id="limpar">Limpar</button>
+        </div>
+      </div>
+      <div class="box_datalist">
+        <label for="freteParaPJ">Frete Para PJ = </label>
+        <input id="freteParaPJ" type="text" readonly />
+      </div>
+      <div class="box_datalist">
+        <label for="freteParaPF">Frete Para PF = </label>
+        <input id="freteParaPF" type="text" readonly />
+      </div>
+    </main>
+
+    <footer>
+      <div class="buttonback">
+        <a href="../calculadoras.html">
+          <input type="button" value="VOLTAR" class="bot3" id="buttonback" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="calculo.js"></script>
+  </body>
+</html>

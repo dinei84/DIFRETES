@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="acets/contabilidade.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../styles/homebotton.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Calculadora de Frete</title>
+  </head>
+  <body>
+    <h1>CALCULADORA DE FRETE</h1>
+    <p>Preencha os campos com as informações do carregamento</p>
+
+    <div ontouchstart="">
+      <div class="button">
+        <a href="../../interface.html">Home</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <label for="valordoFrete"><p class="ref">Valor do Frete</p></label>
+      <input type="text" id="valordoFrete" placeholder="R$" />
+
+      <label for="pedagio"><p class="ref">Pedágio</p></label>
+      <input type="text" class="item" id="pedagio" placeholder="R$" />
+
+      <label for="peso"><p class="ref">Peso carregado</p></label>
+      <input type="text" class="item" id="peso" placeholder="00000" />
+
+      <div class="botoes">
+        <label for="botao"></label>
+        <input type="button" value="Calcular" class="bot1" id="botao" />
+
+        <label for="clean"></label>
+        <input type="button" value="Limpar" class="bot2" id="clean" />
+      </div>
+
+      <label for="freteUnitario"
+        ><p class="ref">Valor do frete Unitário</p></label
+      >
+      <input
+        type="number"
+        class="item"
+        id="freteUnitario"
+        readonly
+        placeholder="R$"
+      />
+
+      <label for="adiantamento"><p class="ref">Adiantamento</p></label>
+      <input
+        type="number"
+        class="item"
+        id="adiantamento"
+        readonly
+        placeholder="R$"
+      />
+    </div>
+
+    <div class="buttonback">
+      <a href="../calculadoras.html">
+        <input type="button" value="VOLTAR" class="bot3" id="buttonback" />
+      </a>
+    </div>
+
+    <script src="calculador.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+  </body>
+</html>
