@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #721738;
+    --secondary-color: #333;
+    --tertiary-color: #560e24;
+    --quaternary-color: #fff;
+    --quintenary-color: #66253d;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    background: var(--tertiary-color);
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    width: 240px;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: relative;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.hamburger:before {
+    top: -8px;
+}
+
+.hamburger:after {
+    top: 8px;
+}
+
+.nav-list {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.nav-list li {
+    list-style: none;
+    margin: 8px 0;
+}
+
+.nav-list li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.nav-list li a:hover {
+    background: #34495e;
+}
+
+.nav-list li a i {
+    min-width: 30px;
+    font-size: 20px;
+}
+
+.nav-list li a span {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar.active .nav-list li a span {
+    opacity: 1;
+}
+
+/* Ajuste o conteúdo principal quando o menu estiver aberto */
+.container {
+    margin-left: 60px;
+    transition: margin-left 0.5s ease;
+}
+
+.sidebar.active + .container {
+    margin-left: 240px;
+} 
